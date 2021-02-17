@@ -1,5 +1,5 @@
 $(document).ready(function () {
-//eventos
+    //eventos
 
     //mouseover
     var caja = $("#caja");
@@ -14,23 +14,52 @@ $(document).ready(function () {
 */
     //hover
 
-    function cambiaAzul(){
+    function cambiaAzul() {
         $(this).css("background", "blue");
     };
 
-    function cambiaVerde(){
-        $(this).css("background","chartreuse");
+    function cambiaVerde() {
+        $(this).css("background", "chartreuse");
     };
 
 
-    caja.hover(cambiaAzul,cambiaVerde);
+    caja.hover(cambiaAzul, cambiaVerde);
 
     //CLick, doble click
 
-    caja.click(function(){
+    caja.click(function () {
+        $(this).css("background", "red");
+    });
+    caja.dblclick(function () {
+        $(this).css("background", "pink");
+    });
+
+    //focus y blur
+    var formulario = $("#nombre");
+    var datos = $('#datos');
+    var sigueme = $('#sigueme');
+    formulario.focus(function () {
+        $(this).css("border", "2px solid green")
+    });
+
+    formulario.blur(function(){
+        console.log("Estoy fuera");
+        $(this).css("border", "5px dashed pink");    
+        datos.text($(this).val()).show();
+    });
+
+    //Mousedown mouseup
+    datos.mousedown(function(){
         $(this).css("background","red");
     });
-    caja.dblclick(function(){
-        $(this).css("background","pink");
+    datos.mouseup(function(){
+        $(this).css("background","blue");
     });
+
+    $(document).mousemove(function(){
+        $('body').css("cursor", "none");
+        sigueme.css("left",event.clientX)
+               .css("top",event.clientY);
+    });
+
 });
