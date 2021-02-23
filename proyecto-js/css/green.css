@@ -1,0 +1,27 @@
+body{
+    background: url('../img/hojas.jpg');
+    background-attachment: fixed;
+}
+#logo{
+    background: #235e3d;
+}
+#menu ul li:hover{
+    background: #235e3d;
+}
+.post a,
+.sobreMi a{
+    background: #235e3d;
+}
+.boton{
+    background: #235e3d;
+}
+#logo:hover{
+    box-shadow: 0px 0px 10px black inset;
+    transform: scale(1.2,1.2);
+    background: #235e3d;
+
+}
+#content #decoracion{
+    background: url("../img/hojas.jpg");
+    background-size: 500px;
+}

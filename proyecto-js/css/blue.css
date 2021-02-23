@@ -1,0 +1,27 @@
+body{
+    background: url('../img/cielo.jpg');
+    background-attachment: fixed;
+}
+#logo{
+    background: #215DA1;
+}
+#menu ul li:hover{
+    background: #215DA1;
+}
+.post a,
+.sobreMi a{
+    background: #215DA1;
+}
+.boton{
+    background: #215DA1;
+}
+#logo:hover{
+    box-shadow: 0px 0px 10px black inset;
+    transform: scale(1.2,1.2);
+    background: #215DA1;
+
+}
+#content #decoracion{
+    background: url("../img/cielo.jpg");
+    background-size: 500px;
+}

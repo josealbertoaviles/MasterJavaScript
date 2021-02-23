@@ -1,0 +1,27 @@
+body{
+    background: url('../img/rojo.jpg');
+    background-attachment: fixed;
+}
+#logo{
+    background: #D52F1D;
+}
+#menu ul li:hover{
+    background: #D52F1D;
+}
+.post a,
+.sobreMi a{
+    background: #D52F1D;
+}
+.boton{
+    background: #D52F1D;
+}
+#logo:hover{
+    box-shadow: 0px 0px 10px black inset;
+    transform: scale(1.2,1.2);
+    background: #D52F1D;
+
+}
+#content #decoracion{
+    background: url("../img/rojo.jpg");
+    background-size: 500px;
+}

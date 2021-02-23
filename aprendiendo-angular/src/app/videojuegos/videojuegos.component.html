@@ -1,0 +1,34 @@
+<div>
+    <h1>Esto es una prueba de Videojuegos</h1>
+    <p><input type="text"[(ngModel)]="miJuego"></p>
+    <button (click)="getMarca()">Mostrar</button>
+    <button (click)="addJuego()">Añadir</button>
+    <p> {{miJuego}}</p>
+   
+    <p>
+        Mis juegos
+    </p>
+    <li *ngFor = "let juego of misJuegos; let indice=index">
+        {{indice+'-'+juego}}
+        <button (click) = misJuegos.splice(indice,1)>Borrar</button>
+        
+
+    </li>
+
+    <p>
+        lista de {{titulo}}
+    </p>
+    <!--
+        directivas
+        *ngif es un if
+        *ngFor es un búcle y nos sirve para recorrer un array
+        [ngSwitch] ="evaluar"
+            *ngSwitchCase = "'lo que se evalua'"
+    -->
+    <h2>{{listado}}</h2>
+    <li *ngFor = "let juego of videojuegos">
+        {{juego.nombre}} - <strong>{{juego.precio}}</strong>
+        <span *ngIf = "30 >= juego.precio" >¡En Oferta!</span>
+
+    </li>
+</div>
