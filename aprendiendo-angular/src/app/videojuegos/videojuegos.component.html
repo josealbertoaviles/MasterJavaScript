@@ -27,8 +27,12 @@
     -->
     <h2>{{listado}}</h2>
     <li *ngFor = "let juego of videojuegos">
-        {{juego.nombre}} - <strong>{{juego.precio}}</strong>
-        <span *ngIf = "30 >= juego.precio" >¡En Oferta!</span>
+        {{juego.nombre}} - <strong >{{juego.precio}}</strong>
+        <span *ngIf = "30 >= juego.precio" 
+            [style.background]="30 >= juego.precio ? 'green':'trasnparent'"
+            >¡En Oferta!
+           
+        </span>
 
     </li>
 </div>

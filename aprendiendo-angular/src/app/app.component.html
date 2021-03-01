@@ -3,7 +3,12 @@
     Bienvenido al {{title}}!
   </h1>
   <p>vamos a aprender Anugular</p>
-  <videojuego>
-    
-  </videojuego>
+  <nav>
+    <a [routerLink]="['/']">Home</a>
+    &nbsp;
+    <a [routerLink]="['/videojuego']">videojuego</a>
+    &nbsp;
+    <a [routerLink]="['/cursos']">cursos</a>
+  </nav>
+  <router-outlet></router-outlet>
 </div>
